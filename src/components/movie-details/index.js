@@ -82,22 +82,22 @@ class MovieDetails extends React.Component {
     else if (this.state.error) {
       return (
         <div>
-          <div className="bg-danger">There was an error while getting the movie information, sorry!</div>
           <Link to="/" className="btn btn-default btn-lg">
             <span className="glyphicon glyphicon-menu-left" aria-hidden="true"/> Back to search
           </Link>
+          <div className={`bg-danger ${style.box}`}>There was an error while getting the movie information, sorry!</div>
         </div>
       );
     }
     else {  // if the data is still loading, show a progressbar
       return (
         <div>
-          <div className="progress">
-            <div className="progress-bar progress-bar-info progress-bar-striped active" style={{width: '99%'}}/>
-          </div>
           <Link to="/" className="btn btn-default btn-lg">
             <span className="glyphicon glyphicon-menu-left" aria-hidden="true"/> Back to search
           </Link>
+          <div className="progress">
+            <div className="progress-bar progress-bar-info progress-bar-striped active" style={{width: '99%'}}/>
+          </div>
         </div>
       );
     }

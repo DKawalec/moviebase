@@ -3,6 +3,7 @@ import theMovieDb from '../../lib/themoviedb/themoviedb';
 import { API_KEY, MIN_QUERY_LENGTH } from '../../config/moviedb';
 import SearchBox from '../search-box';
 import MovieDisplay from '../movie-display';
+import style from './style.scss';
 
 class MovieSearch extends React.Component {
   constructor(props) {
@@ -66,7 +67,7 @@ class MovieSearch extends React.Component {
             </div>
           }
         { this.state.currentError
-          ? <div className="bg-danger">An error occured.</div>
+          ? <div className={`bg-danger ${style.box}`}>An error occured.</div>
           : null
         }
       </div>
