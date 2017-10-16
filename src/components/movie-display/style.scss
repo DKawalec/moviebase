@@ -1,0 +1,20 @@
+.movieDisplay {
+    margin: 20px 0 0;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.imgContainer {
+    text-align: left;
+    padding: 0;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.txtContainer {
+    padding: 10px 10% 0 0;
+}
