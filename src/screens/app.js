@@ -1,4 +1,7 @@
 import React, {PropTypes} from 'react';
+// import Bootstrap first, then own styles on top of it
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/global.scss';
 
 class App extends React.Component {
   render() {
