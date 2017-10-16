@@ -1,12 +1,12 @@
 import React from 'react';
-import SearchBox from '../../components/search-box';
+import MovieSearch from '../../components/movie-search';
 import style from './style.scss';
 
 class HomePage extends React.Component {
   render() {
     return (
       <div className={`${style.main} container`}> 
-        <SearchBox />
+        <MovieSearch />
       </div>
     );
   }
