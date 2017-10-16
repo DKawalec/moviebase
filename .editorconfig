@@ -1,0 +1,21 @@
+# top-most EditorConfig file
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[*.scss]
+indent_style = space
+indent_size = 4
+
+[*.{js,json}]
+indent_style = space
+indent_size = 2
+
+# Remove any whitespace characters preceding newline characters ["true", "false"]
+trim_trailing_whitespace = false
+
+# Ensure file ends with a newline when saving ["true", "false"]
+insert_final_newline = true
