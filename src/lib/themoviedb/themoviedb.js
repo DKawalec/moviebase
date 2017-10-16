@@ -7,6 +7,8 @@
  *
  */
 
+/* eslint-disable */
+
 var theMovieDb = {};
 
 theMovieDb.common = {
